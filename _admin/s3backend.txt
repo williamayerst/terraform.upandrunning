@@ -1,0 +1,6 @@
+terraform remote config \
+    -backend=s3 \
+    -backend-config="bucket=ayerst.net-terraform-state" \
+    -backend-config="key=global/s3/terraform.tfstate" \
+    -backend-config="region=eu-west-2" \
+    -backend-config="encrypt=true"
